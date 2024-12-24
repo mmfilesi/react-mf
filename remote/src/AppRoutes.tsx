@@ -8,17 +8,21 @@ const BazingaPage = React.lazy(() => import('./pages/bazinga/BazingaPage'));
 
 export default function AppRoutes() {
   const routes = [
-    {path: '/', element: <HomePage />},
-    {path: '/bazinga', element: <BazingaPage />},
+    {path: '', element: <HomePage />},
+    {path: 'bazinga', element: <BazingaPage />},
   ];
 
   return (
     <Suspense fallback={useSkeleton('')}>
-      <Routes>
-        { routes.map((route, key: number)=> {
-          return <Route key={key} path={route.path} element={route.element} />
-        }) }
-      </Routes>
+      
+        <Routes>
+          <Route path="remote01">
+            { routes.map((route, key: number)=> {
+              return <Route key={key} path={route.path} element={route.element} />
+            }) }
+          </Route>
+        </Routes>
+     
     </Suspense>
   );
 }

@@ -2,18 +2,17 @@ import './App.css';
 import { BrowserRouter } from 'react-router';
 
 import AppRoutes from './AppRoutes';
+import Layout from './layout/Layout';
 
 function App() {
 
   return (
     <>
-      <main>
-        <h2>Host app</h2>
-        <BrowserRouter>
-          <AppRoutes />
-        </BrowserRouter>
-
-      </main>
+    <BrowserRouter>
+      <Layout>
+        <AppRoutes />
+      </Layout>
+    </BrowserRouter>
     </>
   )
 }

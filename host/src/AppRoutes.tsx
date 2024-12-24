@@ -2,14 +2,17 @@ import React, { Suspense } from 'react';
 import { Routes, Route } from 'react-router';
 
 const HomePage = React.lazy(() => import('./pages/HomePage'));
-const FooContainer = React.lazy(() => import('./pages/FooContainer'));
+const UkaLelePage = React.lazy(() => import('./pages/UkaLelePage'));
+
+const RemoteApp = React.lazy(() => import('mfFoo/App'));
 
 import useSkeleton from './core/hooks/use-skeleton';
 
 export default function AppRoutes() {
   const routes = [
     {path: '/', element: <HomePage />},
-    {path: '/foo-container', element: <FooContainer />},
+    {path: 'remote01/*', element: <RemoteApp />},
+    {path: '/uka-lele', element: <UkaLelePage />},
   ];
 
   return (

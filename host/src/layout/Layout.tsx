@@ -6,13 +6,14 @@ import './layout.css';
 function Layout({ children }: { children: React.ReactNode }) {
 
   const links = [
-    {route: 'remote01', name: 'home'},
-    {route: 'remote01/bazinga', name: 'bazinga'}
+    {route: '/', name: 'home'},
+    {route: '/uka-lele', name: 'host: uka lele'},
+    {route: '/remote01', name: 'remote01'},
   ];
 
   return (
     <div className='main-container'>
-      <h2>Foo header</h2>
+      <h2>Host header</h2>
       <nav className='main-sidebar'>
       { links.map((route, index)=> {
         return <div key={index}><NavLink
@@ -23,7 +24,7 @@ function Layout({ children }: { children: React.ReactNode }) {
       }) }
     </nav>
       <main className='main-page'>{children}</main>
-      <footer>Foo footer</footer>
+      <footer>Host footer</footer>
     </div>
   );
 }

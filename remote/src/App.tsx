@@ -1,4 +1,7 @@
-import { BrowserRouter } from 'react-router';
+/*  */ import { BrowserRouter } from 'react-router';
+
+
+   
 
 import './App.css';
 
@@ -7,13 +10,13 @@ import AppRoutes from './AppRoutes';
 
 function App() {
   return (
-    <>
-    <BrowserRouter>
-      <Layout>
-        <AppRoutes />
-      </Layout>
-    </BrowserRouter>
-    </>
+    <div className='main-foo'>
+      <BrowserRouter>
+        <Layout>
+          <AppRoutes />
+        </Layout>
+      </BrowserRouter>
+    </div>
   )
 }
 
