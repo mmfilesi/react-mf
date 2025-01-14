@@ -11,9 +11,9 @@ function Layout({ children }: { children: React.ReactNode }) {
   ];
 
   return (
-    <div className='main-container'>
-      <h2>Foo header</h2>
-      <nav className='main-sidebar'>
+    <>
+      <h3 className='remote-header'>Remote header</h3>
+      <nav className='remote-main-nav'>
       { links.map((route, index)=> {
         return <div key={index}><NavLink
         to={route.route}
@@ -22,9 +22,9 @@ function Layout({ children }: { children: React.ReactNode }) {
       </NavLink></div>
       }) }
     </nav>
-      <main className='main-page'>{children}</main>
-      <footer>Foo footer</footer>
-    </div>
+      <main>{children}</main>
+
+    </>
   );
 }
 

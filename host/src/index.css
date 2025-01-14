@@ -1,0 +1,12 @@
+@import url('./styles/tokens/fonts.css');
+@import url('./styles/tokens/colors.css');
+@import url('./styles/tokens/shadows.css');
+@import url('./styles/tokens/sizes.css');
+
+@import url('./styles/reset.css');
+@import url('./styles/global.css');
+@import url('./styles/typography.css');
+@import url('./styles/layout.css');
+@import url('./styles/lists.css');
+@import url('./styles/animations.css');
+@import url('./styles/buttons.css');

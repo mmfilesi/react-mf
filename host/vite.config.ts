@@ -9,12 +9,18 @@ export default defineConfig({
     port: 2000,
   },
 
-  base: "http://localhost:2000",
+  base: "http://localhost:2000/",
 
   plugins: [
     federation({
-      name: 'awesomeHost',
+      name: 'host',
+      filename: 'remoteEntry.js',
       manifest: true,
+
+      exposes: {
+        './store': './src/store/use-store',
+      },
+
       remotes: {
         mfFoo: {
           type: "module",
@@ -23,11 +29,11 @@ export default defineConfig({
         },
        // var_remote: "var_remote@https://[...]/remoteEntry.js",
       },
-      exposes: {},
 
       shared: {
         'react': { singleton: true, eager: true, requiredVersion: false },
         'react-dom': { singleton: true, eager: true, requiredVersion: false },
+        'zustand': { singleton: true, eager: true }
         //'react-router': { singleton: true, eager: true, requiredVersion: false },
       },
     }),

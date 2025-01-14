@@ -28,11 +28,25 @@ export default defineConfig({
       filename: 'remoteEntry.js',
       exposes: {
         './App': './src/App.tsx',
+      },     
+
+      remotes: {
+        host: {
+          type: "module",
+          name: "host",
+          entry: 'http://localhost:2000/remoteEntry.js',
+        },
+
+        // host: 'host@http://localhost:2000/remoteEntry.js',
       },
+
+      debug: true,
 
       shared: {
         'react': { singleton: true, eager: true, requiredVersion: false },
         'react-dom': { singleton: true, eager: true, requiredVersion: false },
+        'zustand': { singleton: true, eager: true }
+        // NO hay que compartir react router
         // 'react-router': { singleton: true, eager: true, requiredVersion: false },
       },
     }),

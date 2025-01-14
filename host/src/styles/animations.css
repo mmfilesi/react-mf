@@ -1,0 +1,21 @@
+.fade-in {
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: opacity 1s ease, transform 1s ease;
+  will-change: opacity, transform;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(150vw) scaleX(2);
+  }
+
+  to {
+    transform: translateX(0) scaleX(1);
+  }
+}

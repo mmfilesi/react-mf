@@ -1,0 +1,4 @@
+:root {
+  --size-col-left: 12rem;
+  --size-content-height: calc(100vh - 6rem - 3.7rem);
+}

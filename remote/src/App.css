@@ -1,4 +1,10 @@
 .main-foo {
-  border: 1px dotted rgb(112, 0, 0);
+  border: 3px solid var(--color-secondary);
   padding: 1rem;
+  margin: 1rem;
+  box-sizing: border-box;
+}
+
+.remote-section {
+  margin-bottom: 2em;
 }

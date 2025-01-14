@@ -1,0 +1,10 @@
+:root {
+  --font-family-primary: 'Roboto', sans-serif;
+  --font-family-secondary: 'Montserrat', sans-serif;
+
+  /* Variantes de peso */
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-style-italic: italic;
+  --font-style-normal: normal;
+}

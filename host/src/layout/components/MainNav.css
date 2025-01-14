@@ -1,0 +1,33 @@
+.main-sidebar {
+  box-sizing: border-box;
+  width: 12rem;
+  min-width: 9.7rem;
+  min-height: 2rem;
+  padding: 20px;
+  border-right: 5px solid var(--color-black);
+  background-color: #c9c9c9;
+  color: var(--color-black);
+  overflow: hidden;
+}
+
+.main-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.main-sidebar ul li {
+
+  margin-bottom: 15px;
+}
+
+.main-sidebar a {
+  color: var(--color-black);
+  font-size: 1rem;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.main-sidebar a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}

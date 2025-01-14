@@ -1,0 +1,13 @@
+.coconuts-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.coconuts-actions {
+  display: flex;
+  width: 22rem;
+}
+
+.coconuts-actions button {
+  margin: 1rem
+}

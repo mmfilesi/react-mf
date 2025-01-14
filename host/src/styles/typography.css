@@ -1,0 +1,16 @@
+.bold {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-bold);
+  font-style: var(--font-style-normal);
+}
+
+.italic {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-normal);
+  font-style: var(--font-style-italic);
+}
+
+.text-emphasis {
+  font-weight: 900;
+  color: var(--color-tertiary);
+}

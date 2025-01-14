@@ -1,0 +1,21 @@
+:root {
+  /* Colores primarios */
+  --color-primary: #ffd900;
+  --color-secondary: #2799e0;
+  --color-tertiary: #3b3b3b;
+  --color-background: #ededed;
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Colores secundarios */
+  --color-dark-gray: #242424;
+  --color--dark-gray-minor: #6b6b6b;
+  --color-medium-gray: #949494;
+  --color-border-gray: #555555;
+
+  /* Estados */
+  --color-hover-bg: var(--color-secondary);
+  --color-hover-text: var(--color-primary);
+  --color-active-bg: var(--color-primary);
+  --color-active-text: var(--color-secondary);
+}
